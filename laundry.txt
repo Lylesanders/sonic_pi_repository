@@ -1,0 +1,36 @@
+def wear(smell)
+  sample(:bass_drop_c,rate:(smell) )
+  sleep(2)
+end
+def wash(temerature)
+  play(temerature)
+  sleep (2)
+end
+def dry(dryer_type)
+  sample(dryer_type)
+  sleep(2)
+end
+def treat_stain()
+  stain = [true, false]. choose
+  if stain ==true
+    sample(:bass_hard_c)
+    sleep (2)
+  else
+    sample(:bd_fat)
+    wash(60)
+    sleep (2)
+    dry(:vinyl_backspin)
+  end
+  
+  2.times do
+    wear(1)
+    treat_stain()
+    wear(5)
+    wash(70)
+    dry(:loop_amen)
+  end
+    wear(1)
+    treat_stain()
+    wear(1)
+    wash(70)
+    dry(:loop_industrial)
