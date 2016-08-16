@@ -21,16 +21,17 @@ def treat_stain()
     sleep (2)
     dry(:vinyl_backspin)
   end
-  
-  2.times do
-    wear(1)
-    treat_stain()
-    wear(5)
-    wash(70)
-    dry(:loop_amen)
-  end
-    wear(1)
-    treat_stain()
-    wear(1)
-    wash(70)
-    dry(:loop_industrial)
+end
+
+10.times do
+  wear(1)
+  treat_stain()
+  wear(5)
+  wash(70)
+  dry(:loop_amen)
+end
+wear(4)
+treat_stain()
+wear(1)
+wash(70)
+dry(:loop_industrial)
