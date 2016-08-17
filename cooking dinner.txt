@@ -1,0 +1,34 @@
+def fast_food()
+  sample(:misc_burp)
+end
+def hamburger()
+  sample(:ambi_lunar_land)
+end
+def sausage()
+  sample(:ambi_drone)
+end
+def dumplins()
+  sample(:loop_compus)
+end
+5. times do
+  beef = [true, false]. choose
+  if beef == true
+    hamburger
+  else
+    pork =[true, false]. choose
+    if pork == true
+      sausage
+    else
+      chicken = [true, false]. choose
+      if chicken == true
+        dumplins
+      else
+        home = 0
+        fast_food
+      end
+      
+      
+    end
+  end
+  sleep (5)
+end
